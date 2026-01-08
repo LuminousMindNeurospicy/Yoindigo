@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Índigo Bárcena - Memento Mori</title>
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .typewriter-font {
+        font-family: "Special Elite", "Courier New", monospace;
+      }
+
+      .serif-font {
+        font-family: "Crimson Text", Georgia, serif;
+      }
+
+      .section-divider {
+        width: 60px;
+        height: 2px;
+        margin: 3rem auto;
+        opacity: 0.3;
+      }
+
+      .kintsugi-line {
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .kintsugi-line::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 3px;
+        height: calc(100% - 1rem);
+        background: linear-gradient(
+          180deg,
+          transparent,
+          currentColor,
+          transparent
+        );
+        opacity: 0.4;
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .stagger-1 {
+        animation-delay: 0.2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
+      .stagger-2 {
+        animation-delay: 0.4s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
+      .stagger-3 {
+        animation-delay: 0.6s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
+
+      .poem-line {
+        font-style: italic;
+        margin: 0.5rem 0;
+        opacity: 0.9;
+      }
+
+      .emphasis-text {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      .principle-item {
+        margin: 1.5rem 0;
+        padding-left: 1rem;
+        border-left: 2px solid currentColor;
+        opacity: 0.85;
+      }
+    </style>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  </head>
+  <body class="h-full serif-font">
+    <div id="app" class="w-full h-full overflow-auto">
+      <!-- Hero Section -->
+      <section class="min-h-screen flex items-center justify-center px-6 py-16">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="mb-8 fade-in"><span class="text-4xl">🩶</span></div>
+          <h1
+            id="main-title"
+            class="typewriter-font text-3xl md:text-5xl mb-8 leading-tight fade-in stagger-1"
+          >
+            Yo, Índigo, me reconstruyo sabiendo que voy a morir —y aun así amo
+            la vida.
+          </h1>
+          <div
+            id="intro"
+            class="text-lg md:text-xl leading-relaxed space-y-4 fade-in stagger-2"
+          >
+            <p>Este 2026 ya no escapo de lo que soy.</p>
+            <p>
+              Yo, Índigo Bárcena, me miro con los ojos abiertos y abrazo todo lo
+              que fui: lo que dolió, lo que se rompió, lo que perdí.
+            </p>
+            <p>
+              No para quedarme ahí.<br />
+              Sino para usarlo como materia prima.
+            </p>
+            <p class="mt-6">
+              Desde ese lugar decido bordarme, soldarme, narrarme y diseñarme de
+              nuevo.
+            </p>
+          </div>
+          <div class="mt-12 space-y-2 fade-in stagger-3">
+            <p class="poem-line">
+              Soy casa que se rehace con sus propias ruinas.
+            </p>
+            <p class="poem-line">Soy hilo que no esconde el nudo.</p>
+            <p class="poem-line">Soy fuego que aprende a no quemarse.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Memento Mori Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🕯</span>
+            <h2
+              id="section1-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Memento Mori — Recordar la muerte para honrar la vida
+            </h2>
+          </div>
+          <div class="kintsugi-line space-y-4 text-lg leading-relaxed">
+            <p>Vivir con conciencia de la muerte no me apaga: me despierta.</p>
+            <p>Cada día que respiro es un día prestado.</p>
+            <p>
+              Cada proyecto, cada bordado, cada línea de código, cada kimono…<br />
+              puede ser el último.
+            </p>
+            <p class="mt-6">
+              Eso me obliga a vivir con intención.<br />
+              No como máquina.<br />
+              Sino como artista sagrada.
+            </p>
+            <p class="emphasis-text mt-6">
+              No tengo tiempo para no ser yo misma.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="divider1" class="section-divider"></div>
+      <!-- Amor Fati Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🔥</span>
+            <h2
+              id="section2-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Amor Fati — Amar todo lo que me trajo hasta aquí
+            </h2>
+          </div>
+          <div class="kintsugi-line space-y-4 text-lg leading-relaxed">
+            <p>
+              No solo acepto mi historia.<br />
+              La amo como parte del fuego que me forjó.
+            </p>
+            <p>
+              Amor Fati no es resignación.<br />
+              Es mirar mis traumas, mis caídas y mis confusiones y decirles:<br /><span
+                class="poem-line"
+                >gracias por mostrarme quién soy cuando todo se derrumba.</span
+              >
+            </p>
+            <p class="mt-6">
+              No cambiaría nada.<br />
+              Porque todo me trajo hasta este punto.
+            </p>
+            <p>
+              Mi destino no fue suave.<br />
+              Pero fue fértil.<br />
+              Y sigue sembrando.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="divider2" class="section-divider"></div>
+      <!-- Reconstrucción Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🧵</span>
+            <h2
+              id="section3-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Reconstrucción — Sashiko, Kintsugi y espíritu punk
+            </h2>
+          </div>
+          <div class="kintsugi-line space-y-4 text-lg leading-relaxed">
+            <p>
+              No me reconstruyo para parecer nueva.<br />
+              Me reconstruyo para ser más honesta.
+            </p>
+            <div class="mt-6 space-y-2">
+              <p>
+                <span class="text-2xl">���</span> Con
+                <span class="emphasis-text">Kintsugi</span>, muestro las líneas
+                de oro de mis quiebres.
+              </p>
+              <p>
+                <span class="text-2xl">🪡</span> Con
+                <span class="emphasis-text">Sashiko</span>, bordo mi historia
+                con puntadas visibles.
+              </p>
+              <p>
+                <span class="text-2xl">🎸</span> Con mi
+                <span class="emphasis-text">espíritu punk</span>, lo hago sin
+                pedir permiso y con identidad feroz.
+              </p>
+            </div>
+            <p class="mt-6">
+              Todo lo que hago —mis marcas, mi estética, mis decisiones—<br />
+              es una reivindicación de lo roto como sublime.
+            </p>
+            <p class="emphasis-text">
+              La reconstrucción es un acto de rebeldía espiritual.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="divider3" class="section-divider"></div>
+      <!-- Nietzsche Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🧠</span>
+            <h2
+              id="section4-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Nietzsche — El viaje de mi espíritu
+            </h2>
+          </div>
+          <div class="kintsugi-line space-y-4 text-lg leading-relaxed">
+            <p>
+              Fui camello: cargué lo que el sistema esperaba de mí.<br />
+              Fui león: me rebelé contra lo que no era mío.
+            </p>
+            <p class="mt-6">
+              Hoy soy <span class="emphasis-text">niña sagrada</span>:<br />
+              la que crea mundos nuevos<br />
+              desde la ternura y la fuerza de su diferencia.
+            </p>
+            <p class="mt-6">
+              <span class="text-xl">✨</span> Soy mi propia
+              <span class="poem-line">Übermensch</span>.<br />
+              Transformo lo absurdo en arte.
+            </p>
+            <p class="emphasis-text">
+              No quiero encajar,<br />
+              porque ya soy un universo completo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="divider4" class="section-divider"></div>
+      <!-- Neurodivergencia Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🧩</span>
+            <h2
+              id="section5-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Neurodivergencia consciente — Cómo vivo el 2026 con TDAH
+            </h2>
+          </div>
+          <div class="space-y-4 text-lg leading-relaxed mb-8">
+            <p>
+              Soy una persona con déficit de atención, desordenada, sensible y
+              creativa.<br />
+              Este año dejo de pelear con eso.<br />
+              Aprendo a diseñar mi vida
+              <span class="poem-line">a favor</span> de mi mente.
+            </p>
+            <p class="mt-6">
+              Aplico estos principios no como reglas rígidas, sino como aliados:
+            </p>
+          </div>
+          <div class="space-y-6">
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">Kaizen — mejora mínima constante</p>
+              <p>
+                No me exijo perfección. Me comprometo con pasos pequeños,
+                sostenibles, reales. Hoy 1% es suficiente.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">
+                Kanban — visualizar para no saturarme
+              </p>
+              <p>
+                Saco las ideas de mi cabeza y las pongo frente a mí. Lo
+                pendiente deja de perseguirme. Mi mente respira cuando el caos
+                se vuelve visible.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">Seiton — orden que cuida energía</p>
+              <p>
+                No busco orden estético. Busco orden funcional. Cada cosa tiene
+                un lugar para no robarme atención.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">
+                Poka‑yoke — diseñar para no fallarme
+              </p>
+              <p>
+                No confío en la memoria. Confío en sistemas que previenen
+                errores. Recordatorios, automatizaciones, rutinas suaves.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">
+                Kintsugi — honrar mis interrupciones
+              </p>
+              <p>
+                Mis pausas, mis bloqueos y mis recaídas no me invalidan. Son
+                parte del diseño. Las integro con dignidad.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">
+                Ikigai — sentido antes que productividad
+              </p>
+              <p>
+                No hago por hacer. Hago lo que conecta propósito, gozo y
+                servicio.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">Wabi‑sabi — aceptar lo inacabado</p>
+              <p>Mi proceso es irregular. Y eso también es belleza.</p>
+            </div>
+            <div class="principle-item">
+              <p class="emphasis-text mb-2">
+                Wu wei · Shùn qí zìrán · Zìrán — fluir con mi naturaleza
+              </p>
+              <p>
+                Dejo de forzarme a ritmos ajenos. Escucho mi energía. Actúo
+                cuando hay alineación. Descanso sin culpa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="divider5" class="section-divider"></div>
+      <!-- Triratna Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🧘‍♀️</span>
+            <h2
+              id="section6-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Los 5 énfasis de Triratna — Mi práctica como camino vital
+            </h2>
+          </div>
+          <div class="space-y-4 text-lg leading-relaxed mb-8">
+            <p>
+              Este año honro mi camino espiritual. No como dogma, sino como
+              orientación viva.
+            </p>
+          </div>
+          <div class="space-y-6">
+            <div class="principle-item">
+              <p class="text-xl mb-3">
+                <span class="text-2xl">1️⃣</span>
+                <span class="emphasis-text"
+                  >La práctica centrada en el Buda</span
+                >
+              </p>
+              <p>
+                La conciencia despierta habita en mí. Puedo elegir lucidez y
+                compasión en cada proyecto.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="text-xl mb-3">
+                <span class="text-2xl">2️⃣</span>
+                <span class="emphasis-text">El Dharma vivido</span>
+              </p>
+              <p>
+                No solo estudiado. Aplicado a mis decisiones, mi ética y mi
+                forma de crear.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="text-xl mb-3">
+                <span class="text-2xl">3️⃣</span>
+                <span class="emphasis-text">La Sangha como comunidad viva</span>
+              </p>
+              <p>
+                No camino sola. Tejo redes con otras almas raras, sensibles y
+                creadoras.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="text-xl mb-3">
+                <span class="text-2xl">4️⃣</span>
+                <span class="emphasis-text"
+                  >Transformación personal integral</span
+                >
+              </p>
+              <p>
+                No separo lo profesional de lo humano. Me transformo completa:
+                mente, cuerpo, emoción y visión.
+              </p>
+            </div>
+            <div class="principle-item">
+              <p class="text-xl mb-3">
+                <span class="text-2xl">5️⃣</span>
+                <span class="emphasis-text"
+                  >Cultura espiritual alternativa</span
+                >
+              </p>
+              <p>
+                Soy parte de una nueva cultura. Donde tecnología,
+                neurodivergencia, estética y ternura coexisten. La diseño. La
+                practico. La vivo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="divider6" class="section-divider"></div>
+      <!-- Misión Section -->
+      <section class="px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-3xl mb-4 block">🎯</span>
+            <h2
+              id="section7-title"
+              class="typewriter-font text-2xl md:text-4xl mb-4"
+            >
+              Misión de vida — No vine a encajar, vine a crear nuevos moldes
+            </h2>
+          </div>
+          <div class="kintsugi-line space-y-4 text-lg leading-relaxed">
+            <p>
+              Mi misión no es ser normal. Es crear mundos donde lo no‑normal sea
+              amado, útil y bello.
+            </p>
+            <p class="mt-6">
+              Desde mis proyectos tech, mis marcas, mis performances, mis versos
+              y mis días, todo apunta a lo mismo:
+            </p>
+            <p class="emphasis-text mt-6">
+              Integrar lo roto, lo raro y lo radical en una vida con propósito.
+              Amar mi destino. Vivir sabiendo que moriré. Y aun así, dejar
+              belleza, comunidad y libertad a mi paso.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="divider7" class="section-divider"></div>
+      <!-- Closing Section -->
+      <section class="px-6 py-16 pb-24">
+        <div class="max-w-2xl mx-auto text-center">
+          <span class="text-3xl mb-6 block">💬</span>
+          <h2 class="typewriter-font text-2xl md:text-3xl mb-8">
+            Última palabra
+          </h2>
+          <div class="space-y-4 text-lg leading-relaxed">
+            <p class="emphasis-text">
+              Yo, Índigo — 2026: respiro, creo, reparo, y camino con
+              consciencia.
+            </p>
+            <div class="mt-8 space-y-2">
+              <p class="poem-line">Soy bordado visible.</p>
+              <p class="poem-line">Soy herida con brillo.</p>
+              <p class="poem-line">Soy transformación viva.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const defaultConfig = {
+        background_color: "#e8dfd0",
+        text_color: "#3d3226",
+        accent_color: "#8b7355",
+        divider_color: "#a89584",
+        border_color: "#8b7355",
+        font_family: "Special Elite",
+        font_size: 16,
+        main_title:
+          "Yo, Índigo, me reconstruyo sabiendo que voy a morir —y aun así amo la vida.",
+        section1_title: "Memento Mori — Recordar la muerte para honrar la vida",
+        section2_title: "Amor Fati — Amar todo lo que me trajo hasta aquí",
+        section3_title: "Reconstrucción — Sashiko, Kintsugi y espíritu punk",
+        section4_title: "Nietzsche — El viaje de mi espíritu",
+        section5_title:
+          "Neurodivergencia consciente — Cómo vivo el 2026 con TDAH",
+        section6_title:
+          "Los 5 énfasis de Triratna — Mi práctica como camino vital",
+        section7_title:
+          "Misión de vida — No vine a encajar, vine a crear nuevos moldes",
+      };
+
+      async function onConfigChange(config) {
+        const baseFontSize = config.font_size || defaultConfig.font_size;
+        const customFont = config.font_family || defaultConfig.font_family;
+        const baseFontStack = "Courier New, monospace";
+        const serifFontStack = "Crimson Text, Georgia, serif";
+
+        // Apply colors
+        document.getElementById("app").style.backgroundColor =
+          config.background_color || defaultConfig.background_color;
+        document.getElementById("app").style.color =
+          config.text_color || defaultConfig.text_color;
+
+        // Apply divider colors
+        const dividers = document.querySelectorAll(".section-divider");
+        dividers.forEach((divider) => {
+          divider.style.backgroundColor =
+            config.divider_color || defaultConfig.divider_color;
+        });
+
+        // Apply border colors
+        const kintsugiLines = document.querySelectorAll(
+          ".kintsugi-line::before, .principle-item"
+        );
+        kintsugiLines.forEach((line) => {
+          line.style.borderColor =
+            config.border_color || defaultConfig.border_color;
+        });
+
+        // Apply fonts and sizes
+        const typewriterElements =
+          document.querySelectorAll(".typewriter-font");
+        typewriterElements.forEach((el) => {
+          el.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        });
+
+        const serifElements = document.querySelectorAll(
+          ".serif-font, .serif-font *:not(.typewriter-font)"
+        );
+        serifElements.forEach((el) => {
+          if (!el.classList.contains("typewriter-font")) {
+            el.style.fontFamily = `${serifFontStack}`;
+          }
+        });
+
+        // Title sizes
+        document.getElementById("main-title").style.fontSize = `${
+          baseFontSize * 2
+        }px`;
+        const sectionTitles = document.querySelectorAll("h2");
+        sectionTitles.forEach((title) => {
+          title.style.fontSize = `${baseFontSize * 1.75}px`;
+        });
+
+        // Body text
+        const bodyText = document.querySelectorAll("p, .poem-line");
+        bodyText.forEach((p) => {
+          p.style.fontSize = `${baseFontSize * 1.125}px`;
+        });
+
+        // Update text content
+        document.getElementById("main-title").textContent =
+          config.main_title || defaultConfig.main_title;
+        document.getElementById("section1-title").textContent =
+          config.section1_title || defaultConfig.section1_title;
+        document.getElementById("section2-title").textContent =
+          config.section2_title || defaultConfig.section2_title;
+        document.getElementById("section3-title").textContent =
+          config.section3_title || defaultConfig.section3_title;
+        document.getElementById("section4-title").textContent =
+          config.section4_title || defaultConfig.section4_title;
+        document.getElementById("section5-title").textContent =
+          config.section5_title || defaultConfig.section5_title;
+        document.getElementById("section6-title").textContent =
+          config.section6_title || defaultConfig.section6_title;
+        document.getElementById("section7-title").textContent =
+          config.section7_title || defaultConfig.section7_title;
+      }
+
+      const element = {
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () =>
+                config.background_color || defaultConfig.background_color,
+              set: (value) => {
+                if (window.elementSdk) {
+                  window.elementSdk.config.background_color = value;
+                  window.elementSdk.setConfig({ background_color: value });
+                }
+              },
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                if (window.elementSdk) {
+                  window.elementSdk.config.text_color = value;
+                  window.elementSdk.setConfig({ text_color: value });
+                }
+              },
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                if (window.elementSdk) {
+                  window.elementSdk.config.accent_color = value;
+                  window.elementSdk.setConfig({ accent_color: value });
+                }
+              },
+            },
+            {
+              get: () => config.divider_color || defaultConfig.divider_color,
+              set: (value) => {
+                if (window.elementSdk) {
+                  window.elementSdk.config.divider_color = value;
+                  window.elementSdk.setConfig({ divider_color: value });
+                }
+              },
+            },
+            {
+              get: () => config.border_color || defaultConfig.border_color,
+              set: (value) => {
+                if (window.elementSdk) {
+                  window.elementSdk.config.border_color = value;
+                  window.elementSdk.setConfig({ border_color: value });
+                }
+              },
+            },
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.font_family = value;
+                window.elementSdk.setConfig({ font_family: value });
+              }
+            },
+          },
+          fontSizeable: {
+            get: () => config.font_size || defaultConfig.font_size,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.font_size = value;
+                window.elementSdk.setConfig({ font_size: value });
+              }
+            },
+          },
+        }),
+        mapToEditPanelValues: (config) =>
+          new Map([
+            ["main_title", config.main_title || defaultConfig.main_title],
+            [
+              "section1_title",
+              config.section1_title || defaultConfig.section1_title,
+            ],
+            [
+              "section2_title",
+              config.section2_title || defaultConfig.section2_title,
+            ],
+            [
+              "section3_title",
+              config.section3_title || defaultConfig.section3_title,
+            ],
+            [
+              "section4_title",
+              config.section4_title || defaultConfig.section4_title,
+            ],
+            [
+              "section5_title",
+              config.section5_title || defaultConfig.section5_title,
+            ],
+            [
+              "section6_title",
+              config.section6_title || defaultConfig.section6_title,
+            ],
+            [
+              "section7_title",
+              config.section7_title || defaultConfig.section7_title,
+            ],
+          ]),
+      };
+
+      if (window.elementSdk) {
+        window.elementSdk.init(element);
+      }
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9baa44403797eef2',t:'MTc2Nzg2MDMzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
